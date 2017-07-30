@@ -12,11 +12,8 @@ layout: default
     <time>{{ page.date | date_to_string }}</time>
   </span>
 
-
-  {{ content }}
-
 <div class="post-tag">
-    <ul>
+    Tags : <ul>
       {% for tag in page.tags %}
       <li>
         <a href="{{ site.url }}{{ site.baseurl }}/tags#{{ tag }}">
@@ -27,6 +24,10 @@ layout: default
       {% endfor %}
     </ul>
   </div>
+
+  {{ content }}
+
+
 
   <!-- Disqus -->
   {% if page.comments != false and site.disqus.id %}
