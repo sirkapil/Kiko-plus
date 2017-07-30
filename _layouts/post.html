@@ -11,7 +11,11 @@ layout: default
   <span class="post-date">
     <time>{{ page.date | date_to_string }}</time>
   </span>
-  <div class="post-tag">
+
+
+  {{ content }}
+
+<div class="post-tag">
     <ul>
       {% for tag in page.tags %}
       <li>
@@ -23,8 +27,6 @@ layout: default
       {% endfor %}
     </ul>
   </div>
-
-  {{ content }}
 
   <!-- Disqus -->
   {% if page.comments != false and site.disqus.id %}
