@@ -6,6 +6,7 @@ layout: default
     <a href="{{ site.url }}/{{ site.baseurl }}">{{ site.name }}<span>&#39;s blog</span></a>
   </h1>
 </header>
+{% assign author = site.authors[page.author] %}
 <div class="post">
   <div class="post-title">{{ page.title }}</div>
   <span class="post-date">
@@ -27,7 +28,7 @@ layout: default
 
   {{ content }}
 
-
+<div class="meta"> 		<img src="http://www.gravatar.com/avatar/{{ author.gravatar }}?s=40"> 		<span class="author">{{ author.display_name }}</span> 	</div>
 
   <!-- Disqus -->
   {% if page.comments != false and site.disqus.id %}

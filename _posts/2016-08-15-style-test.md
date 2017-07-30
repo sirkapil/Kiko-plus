@@ -2,6 +2,7 @@
 layout: post
 title: "A Full and Comprehensive Style Test"
 description: "Test post for style"
+author: Kapil
 date: 2016-08-15
 tags: [test, style]
 comments: true
